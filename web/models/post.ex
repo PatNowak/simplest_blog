@@ -3,8 +3,7 @@ defmodule Blog.Post do
 
   schema "posts" do
     field :title, :string
-    field :content, :string
-    field :author, :string
+    field :body, :string
     has_many :comments, Blog.Comment
 
     timestamps()
@@ -15,7 +14,7 @@ defmodule Blog.Post do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title, :content, :author])
-    |> validate_required([:title, :content, :author])
+    |> cast(params, [:title, :body])
+    |> validate_required([:title, :body])
   end
 end

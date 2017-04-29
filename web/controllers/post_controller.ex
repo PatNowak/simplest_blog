@@ -1,7 +1,7 @@
 defmodule Blog.PostController do
   use Blog.Web, :controller
 
-  alias Blog.Post
+  alias Blog.{Post, Comment}
 
   def index(conn, _params) do
     posts = Repo.all(Post)
