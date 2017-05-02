@@ -35,7 +35,7 @@ config :logger, level: :info
 # the key and cert in disk or a relative path inside priv,
 # for example "priv/ssl/server.key".
 #
-# We also recommend setting `force_ssl`, ensuring no data is
+# We also recommend setting `force_ssl`, ensuring nos data is
 # ever sent via http, always redirecting to https:
 #
 #     config :blog, Blog.Endpoint,
@@ -58,4 +58,4 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
