@@ -20,6 +20,8 @@ defmodule Blog.Router do
     resources "/posts", PostController do
       post "/comment", PostController, :add_comment
     end
+
+    get "/zaloguj", SessionController, :new
   end
 
   # Other scopes may use custom stacks.
